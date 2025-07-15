@@ -5,6 +5,95 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tableau de bord Admin - TIT SARL</title>
   <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f4f7fa;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .btn-outline {
+      border: 1px solid white;
+      padding: 5px 12px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .btn-outline:hover {
+      background-color: white;
+      color: #003366;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      color: #003366;
+    }
+
+    ul.admin-actions {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul.admin-actions li {
+      background: #f0f4f8;
+      padding: 15px 20px;
+      margin: 15px 0;
+      border-left: 6px solid #003366;
+      border-radius: 8px;
+      font-size: 1.1em;
+    }
+
+    ul.admin-actions li i {
+      margin-right: 10px;
+      color: #003366;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
 
@@ -21,27 +110,26 @@
   <section class="presentation">
     <div class="container">
       <h1>Panneau d’administration</h1>
-      <p>Gérez les produits, les services, les messages, les clients et les statistiques ici.</p>
+      <p>Gérez vos contenus en toute simplicité depuis cet espace sécurisé.</p>
     </div>
   </section>
 
   <section class="services">
     <div class="container">
-      <ul>
-        <li>➕ Ajouter / modifier des produits</li>
-        <li>📬 Voir les messages ou demandes de devis</li>
-        <li>👤 Gérer les comptes clients</li>
-        <li>📊 Statistiques des visites</li>
-        <li>⬇️ Exporter les données (PDF/Excel)</li>
+      <ul class="admin-actions">
+        <li><i class="fas fa-plus-circle"></i> Ajouter / modifier des produits</li>
+        <li><i class="fas fa-envelope-open-text"></i> Voir les messages ou demandes de devis</li>
+        <li><i class="fas fa-users-cog"></i> Gérer les comptes clients</li>
+        <li><i class="fas fa-chart-line"></i> Statistiques des visites</li>
+        <li><i class="fas fa-file-export"></i> Exporter les données (PDF / Excel)</li>
       </ul>
     </div>
   </section>
 
   <footer>
-    <div class="container">
-      <p>&copy; 2025 TIT SARL – Tableau de bord Admin</p>
-    </div>
+    <p>&copy; 2025 TIT SARL – Tableau de bord Admin</p>
   </footer>
 
 </body>
 </html>
+
