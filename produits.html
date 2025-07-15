@@ -6,6 +6,125 @@
   <title>Nos Produits - TIT SARL</title>
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f7fa;
+      color: #333;
+      margin: 0;
+    }
+
+    header {
+      background-color: #001f3f;
+      color: white;
+      padding: 15px 20px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .nav-links li a.active,
+    .nav-links li a:hover {
+      color: #ffd700;
+    }
+
+    .btn-outline {
+      border: 1px solid #ffd700;
+      padding: 6px 10px;
+      border-radius: 5px;
+    }
+
+    .presentation {
+      background: linear-gradient(to right, #003366, #005599);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: #003366;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 20px;
+    }
+
+    .service-item {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .service-item img {
+      width: 100%;
+      border-radius: 8px;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .btn {
+      background-color: #ffd700;
+      color: #003366;
+      padding: 8px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background-color: #ffc107;
+    }
+
+    footer {
+      background-color: #001f3f;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .socials a {
+      color: #ccc;
+      margin: 0 10px;
+      font-size: 1.2em;
+    }
+
+    .socials a:hover {
+      color: #ffd700;
+    }
+  </style>
 </head>
 <body>
 
@@ -30,25 +149,65 @@
     </div>
   </section>
 
-  <section class="services">
-    <div class="container">
-      <h2>Caméras de surveillance</h2>
-      <div class="service-grid">
-        <div class="service-item">
-          <img src="https://i12.tvoysad.ru/2025/07/13/camera-surveillance-exterieur-1024x575a2e18bcc314d639f.jpg" alt="Caméra IP" style="width:100%; border-radius:8px;">
-          <h4>Caméra IP HD</h4>
-          <p>Vision jour/nuit, 1080p, accès mobile</p>
-          <p><strong>Prix : 60$</strong></p>
-          <a class="btn" href="https://wa.me/243817775070?text=Je%20souhaite%20installer%20une%20Caméra%20IP%20HD">Demander une installation</a>
-        </div>
+  <section class="services container">
+    <h2>Caméras de surveillance</h2>
+    <div class="service-grid">
+      <div class="service-item">
+        <img src="https://i12.tvoysad.ru/2025/07/13/camera-surveillance-exterieur-1024x575a2e18bcc314d639f.jpg" alt="Caméra IP HD">
+        <h4>Caméra IP HD</h4>
+        <p>Vision 1080p, infrarouge, mobile</p>
+        <p><strong>Prix : 60$</strong></p>
+        <a class="btn" href="https://wa.me/243817775070?text=Je%20souhaite%20installer%20une%20Caméra%20IP">Commander</a>
+      </div>
+      <div class="service-item">
+        <img src="https://i10.tvoysad.ru/2025/07/13/acd1e2d1ed48ff4e9.jpg" alt="PTZ motorisée">
+        <h4>Caméra PTZ motorisée</h4>
+        <p>360°, zoom optique, extérieure</p>
+        <p><strong>Prix : 120$</strong></p>
+        <a class="btn" href="https://wa.me/243817775070?text=PTZ">Commander</a>
+      </div>
+      <div class="service-item">
+        <img src="https://i.imgur.com/dl9XSBH.jpg" alt="Caméra analogique HD">
+        <h4>Caméra analogique HD</h4>
+        <p>Compatible DVR, vision nocturne</p>
+        <p><strong>Prix : 45$</strong></p>
+        <a class="btn" href="https://wa.me/243817775070?text=Caméra%20analogique">Commander</a>
+      </div>
+    </div>
 
-        <div class="service-item">
-          <img src="https://i10.tvoysad.ru/2025/07/13/acd1e2d1ed48ff4e9.jpg" alt="Caméra PTZ" style="width:100%; border-radius:8px;">
-          <h4>Caméra PTZ motorisée</h4>
-          <p>Rotation automatique 360°, zoom optique</p>
-          <p><strong>Prix : 120$</strong></p>
-          <a class="btn" href="https://wa.me/243817775070?text=Je%20souhaite%20installer%20une%20Caméra%20PTZ">Demander une installation</a>
-        </div>
+    <h2>Systèmes d’alarme</h2>
+    <div class="service-grid">
+      <div class="service-item">
+        <img src="https://i.imgur.com/mfNiD0u.jpg" alt="Alarme intrusion">
+        <h4>Alarme anti-intrusion</h4>
+        <p>Capteurs de mouvement, alertes SMS</p>
+        <p><strong>Prix : 90$</strong></p>
+        <a class="btn" href="https://wa.me/243817775070?text=Alarme%20intrusion">Commander</a>
+      </div>
+      <div class="service-item">
+        <img src="https://i.imgur.com/q5BPLsM.jpg" alt="Détection incendie">
+        <h4>Système incendie</h4>
+        <p>Détecteurs de fumée et centrale</p>
+        <p><strong>Prix : 75$</strong></p>
+        <a class="btn" href="https://wa.me/243817775070?text=Détection%20incendie">Commander</a>
+      </div>
+    </div>
+
+    <h2>Contrôle d’accès</h2>
+    <div class="service-grid">
+      <div class="service-item">
+        <img src="https://i.imgur.com/XFO3rkX.jpg" alt="ZKTeco">
+        <h4>ZKTeco F18</h4>
+        <p>Empreinte digitale, badge RFID</p>
+        <p><strong>Prix : 130$</strong></p>
+        <a class="btn" href="https://wa.me/243817775070?text=ZKTeco%20F18">Commander</a>
+      </div>
+      <div class="service-item">
+        <img src="https://i.imgur.com/YTyBzGj.jpg" alt="Hikvision DS-K1T341AM">
+        <h4>Hikvision DS-K1T341AM</h4>
+        <p>Reconnaissance faciale, RFID</p>
+        <p><strong>Prix : 180$</strong></p>
+        <a class="btn" href="https://wa.me/243817775070?text=Hikvision%20DS-K1T341AM">Commander</a>
       </div>
     </div>
   </section>
@@ -65,3 +224,4 @@
 
 </body>
 </html>
+
