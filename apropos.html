@@ -1,11 +1,134 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>À propos - TIT SARL</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f4f7fa;
+    }
+
+    header {
+      background-color: #001f3f;
+      color: white;
+      padding: 15px 20px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #ffd700;
+    }
+
+    .btn-outline {
+      border: 1px solid #ffd700;
+      padding: 6px 10px;
+      border-radius: 5px;
+    }
+
+    .presentation {
+      background-image: url('https://images.unsplash.com/photo-1614064641938-3bceeeb2d54f');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .presentation::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+
+    .presentation .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .presentation h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    section .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+      color: #333;
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: #003366;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2 i {
+      color: #005599;
+    }
+
+    footer {
+      background-color: #001f3f;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .socials {
+      margin-top: 10px;
+    }
+
+    .socials a {
+      margin: 0 10px;
+      color: white;
+      font-size: 1.3em;
+    }
+
+    .socials a:hover {
+      color: #ffd700;
+    }
+
+    @media (max-width: 600px) {
+      .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -27,18 +150,22 @@
   <div class="container">
     <h1>À propos de TIT SARL</h1>
     <p><strong>TIT SARL</strong> est une entreprise congolaise spécialisée dans la sécurité électronique.</p>
+  </div>
+</section>
 
-    <h2>Notre Histoire</h2>
+<section>
+  <div class="container">
+    <h2><i class="fa fa-history"></i> Notre Histoire</h2>
     <p>Fondée à Goma, TIT SARL accompagne depuis plusieurs années les entreprises, les institutions et les particuliers dans la mise en place de systèmes de sécurité fiables.</p>
 
-    <h2>Notre Mission</h2>
-    <p>Fournir des solutions de sécurité de haute qualité, accessibles, et adaptées aux réalités locales.</p>
+    <h2><i class="fa fa-bullseye"></i> Notre Mission</h2>
+    <p>Fournir des solutions de sécurité de haute qualité, accessibles et adaptées aux réalités locales.</p>
 
-    <h2>Notre Vision</h2>
+    <h2><i class="fa fa-eye"></i> Notre Vision</h2>
     <p>Être le leader de la sécurité électronique en République Démocratique du Congo et dans la région des Grands Lacs.</p>
 
-    <h2>Nos Clients & Partenaires</h2>
-    <p>Nous avons collaboré avec plusieurs institutions locales, écoles, entreprises et particuliers.</p>
+    <h2><i class="fa fa-handshake"></i> Nos Clients & Partenaires</h2>
+    <p>Nous avons collaboré avec plusieurs institutions locales, écoles, entreprises et particuliers pour garantir leur sécurité.</p>
   </div>
 </section>
 
@@ -54,3 +181,4 @@
 
 </body>
 </html>
+
