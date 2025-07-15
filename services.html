@@ -4,14 +4,128 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Nos Services - TIT SARL</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f7fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #001f3f;
+      color: white;
+      padding: 15px 20px;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 0;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 12px;
+    }
+
+    .nav-links li a.active,
+    .nav-links li a:hover {
+      background-color: #ffd700;
+      color: #003366;
+      border-radius: 5px;
+    }
+
+    .btn-outline {
+      border: 2px solid #ffd700;
+      padding: 6px 12px;
+      border-radius: 5px;
+    }
+
+    .presentation {
+      background: linear-gradient(to right, #003366, #005599);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .services .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .service-item {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .service-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-item i {
+      font-size: 2.5em;
+      color: #003366;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #001f3f;
+      color: #ccc;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .socials a {
+      color: #ccc;
+      margin: 0 10px;
+      font-size: 1.4em;
+    }
+
+    .socials a:hover {
+      color: #ffd700;
+    }
+  </style>
 </head>
 <body>
 
   <header>
     <nav class="navbar">
-      <div class="logo">TIT SARL</div>
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo_tit.png" alt="Logo TIT SARL" />
+        </a>
+      </div>
       <ul class="nav-links">
         <li><a href="index.html">Accueil</a></li>
         <li><a href="produits.html">Produits</a></li>
